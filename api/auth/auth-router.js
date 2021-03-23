@@ -57,8 +57,11 @@ router.post("/login", (req, res) => {
 });
 
 function buildToken(user) {
-  console.log('foo')
-  return 'foo'
+  const payload = {
+    subject: user.id,
+    username: user.username,
+    role: user.role,
+  }
 }
 
 module.exports = router;
