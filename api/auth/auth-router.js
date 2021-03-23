@@ -66,8 +66,8 @@ function buildToken(user) {
   const config = {
     expiresIn: '1d',
   }
-  jwt.sign(
-    payload, 'shh'
+  return jwt.sign(
+    payload, 'shh', config
   )
 }
 
