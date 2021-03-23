@@ -66,6 +66,9 @@ function buildToken(user) {
   const config = {
     expiresIn: '1d',
   }
+  jwt.sign(
+    payload, 'shh'
+  )
 }
 
 module.exports = router;
