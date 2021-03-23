@@ -68,7 +68,7 @@ function buildToken(user) {
     expiresIn: '1d',
   }
   return jwt.sign(
-    payload, 'shh', config
+    payload, jwtSecret, config
   )
 }
 
