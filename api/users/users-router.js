@@ -7,6 +7,7 @@ const only = role => (req, res, next) => {
   // fish the token from req
   // fish the actual role from the token
   // compare that against the role coming in through args
+  // if they're the same proceed otherwise bounce
 }
 
 router.get("/", restricted, only('admin'), (req, res) => {
